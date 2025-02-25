@@ -1,0 +1,22 @@
+---
+
+
+- name: install pkgs
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - amanda-server
+    - amanda-client
+
+
+
+
+
+
+
+
+
+
+
+
